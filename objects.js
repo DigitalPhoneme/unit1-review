@@ -82,6 +82,8 @@
 
 // const bob = new Student("Bob", 85)
 
+
+
 // console.log(bob)
 // console.log(bob.study())
 // console.log(bob.improveGrade(5))
@@ -134,3 +136,29 @@ const highGrades = students.filter(s => s.grade > 88)
 console.log(highGrades)
 const average = students.reduce((sum,s) => sum + s.grade, 0) / students.length;
 console.log(average)
+
+// String Methods
+
+const text = "Hello, JavaScript!"
+
+console.log(text.toUpperCase())
+console.log(text.split(" "))
+console.log(text.includes("Java"))
+console.log(text.replace("JavaScript", "World"))
+console.log(text.slice(5, 9))
+
+// Task: with `input = "john,doe,30,developer";
+
+// 1. `split` to array
+// 2. Capitalize first (name)
+// 3. Sentence. "[Name] is a developer"
+
+// Break it: Split -> Capitalize -> Build string. 
+
+const input = "john,doe,30,developer"
+const parts = input.split(",")
+  console.log(parts)
+  const name = parts[0].charAt(0).toUpperCase() + parts[0].slice(1)
+  console.log(name)
+const sentence = `${name} is a ${parts[3]}`
+console.log(sentence)
