@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Student Manager</title>
+</head>
+<body>
+    <h1>Add a Student</h1>
+    <form id="addForm">
+        <label>Name: </label>
+        <input type="text" name="name" required>
+        <label>Grade: </label>
+        <input type="number" name="grade" min="0" max="100" required>
+        <button type="submit">Add Student</button>
+    </form>
+    <h1>Filter Students</h1>
+    <form id="filterForm">
+        <label>Minimum Grade:</label>
+        <input type="number" name="minGrade" min="0" max="100">
+        <button type="submit">Filter</button>
+    </form>
+    <br>
+    <h1>Update Student Grade</h1>
+    <form id="updateForm">
+        <label>Name: </label>
+        <input type="text" name="name" required>
+        <label>Grade: </label>
+        <input type="number" name="grade" min="0" max="100" required>
+        <button type="submit"> Update Grade</button>
+
+    </form>
+    <div id="results"></div>
+</body>
+</html>
